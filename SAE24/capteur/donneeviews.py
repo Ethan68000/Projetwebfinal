@@ -23,5 +23,5 @@ def ajout(request):
         return render(request, "Donnees/ajout.html", {"form": form})
 
 def affiche(request, id):
-    CapteurDonnee = models.Donnees.objects.get(pk=id)
+    Donnees = models.Donnees.objects.get(pk=id)
     return render(request, "Donnees/affiche.html", {"Donnees": Donnees})

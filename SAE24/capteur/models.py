@@ -155,3 +155,6 @@ class Donnees(models.Model):
     class Meta:
         managed = False
         db_table = 'donnees'
+
+    def __str__(self):
+        return f"donnees {self.id_capteur}: {self.date}, {self.time}, {self.temperature}"
