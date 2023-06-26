@@ -146,4 +146,12 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
-# Create your models here.
+class Donnees(models.Model):
+    id_capteur = models.ForeignKey(CapteurCapteur, models.DO_NOTHING, db_column='id_capteur')
+    date = models.DateTimeField()
+    time = models.DateTimeField()
+    temperature = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'donnees'

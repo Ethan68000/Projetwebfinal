@@ -6,3 +6,9 @@ class CapteurForm(ModelForm):
     class Meta:
         model = models.Capteur
         fields = "__all__"
+
+
+class DonneesForm(ModelForm):
+    class Meta:
+        model = models.Donnees
+        fields = "__all__"
